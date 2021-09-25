@@ -36,7 +36,7 @@ def save_as():
 def run():
     if file_path == '':
         save_prompt = Toplevel()
-        text = Label(save_prompt, text='Please save your code')
+        text = Label(save_prompt, text='Please save your code to rune it!')
         text.pack()
         return
     command = f'python {file_path}'
@@ -64,7 +64,7 @@ compiler.config(menu=menu_bar)
 editor = Text()
 editor.pack()
 
-code_output = Text(height=10)
+code_output = Text(height=12)
 code_output.pack()
 
 compiler.mainloop()
